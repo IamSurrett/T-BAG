@@ -1,0 +1,6 @@
+guideBook 'Look for a key to win the game
+
+useon property: lst of what item can be used on 
+
+
+w=World();w.go('n');w.go('e');w.take('key');w.go('n')
