@@ -80,7 +80,7 @@ class World:
       self.location.items.remove(item)
       self.player.inventory.append(item)
       return("You picked up " + item.name + ".\n" + self.carrying())
-    return("There is no " + item.name + " to take.")
+    return("There is no " + description + " to take.")
 
   def drop(self,description):
     item = self.itemFinder(self.player.inventory, description)
@@ -91,7 +91,11 @@ class World:
     return("There is no " + item.name + " to drop.")
 
   def save(self):
-    return(saveTheWorld(self))
+    saveStatus = "Save failed. Please try again with another save name."
+    failedStatus = "Save failed. Please try again with another save name."
+    while saveStatus == failedStatus:
+      saveStatus = saveTheWorld(self)
+    return(saveStatus)
 
   def itemLister(self,itemList,nothingMessage,carryingMessage):
     if itemList == []:

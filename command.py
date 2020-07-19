@@ -4,7 +4,7 @@ class Command:
     self.hasParams = hasParams
 
   def useCommand(self,params):
-    if self.hasParams == 1:
+    if self.hasParams:
       return(self.method(params))
     else:
       return(self.method())

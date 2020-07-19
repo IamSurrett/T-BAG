@@ -12,15 +12,13 @@ def saveTheWorld(world):
       print(error)
       return("Save failed. Please try again with another save name.")
 
-  print(world.locations.keys())
+  print("saving locations...")
   for roomName in world.locations.keys():
-    print("saving " + roomName + "...")
     with open(savename + "/rooms/" + roomName + ".json",'w') as F:
-      print("    created file for " + roomName)
       F.write(json.dumps(world.locations[roomName].jsonify()))
 
   with open(savename + "/player.json","w") as F:
     F.write(json.dumps(world.player.jsonify()))
-    print("created player file")
+    print("saving player...")
 
   return("Game saved!")

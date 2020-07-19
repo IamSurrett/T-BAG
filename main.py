@@ -4,21 +4,20 @@ from helptext import helpText
 
 def main():
     print("Welcome to T-BAG, your friendly neighborhood Text-Based Adventure Game!")
-    gameName = input("Please enter game folder name (ClueHouse, or custom save folder)")
-    w = World(gameName)
+    w = loadGameWorld()
     currentInput = ""
 
     commands = {
-      "go": Command(w.go,1),
-      "look": Command(w.look,0),
-      "whereami": Command(w.whereami,0),
-      "carrying": Command(w.carrying,0),
-      "lookaround": Command(w.lookaround,0),
-      "examine": Command(w.examine,1),
-      "take": Command(w.take,1),
-      "drop": Command(w.drop,1),
-      "save": Command(w.save, 0)
-      # "use": Command(w.use,1)
+      "go": Command(w.go,True),
+      "look": Command(w.look,False),
+      "whereami": Command(w.whereami,False),
+      "carrying": Command(w.carrying,False),
+      "lookaround": Command(w.lookaround,False),
+      "examine": Command(w.examine,True),
+      "take": Command(w.take,True),
+      "drop": Command(w.drop,True),
+      "save": Command(w.save, False)
+      # "use": Command(w.use,True)
     }
     # MAIN GAME INPUT LOOP
     while(currentInput != 'exit'):
@@ -33,13 +32,29 @@ def main():
       if command == 'help':
         print(helpText)
       elif command == "exit":
+        shouldSaveGame = input("Would you like to save before you leave? y or n: ")
+        if(shouldSaveGame == "y" or shouldSaveGame == "yes"):
+          print(commands["save"].useCommand(None))
         print("Thanks for playing!")
+        exit()
       else:
       # execute regular command
         try:
           print(commands[command].useCommand(params))
         except KeyError:
           print("command '"+ currentInput + "' not recognized. type 'help' for a list of commands")
+
+def loadGameWorld():
+  gameName = input("Please enter game folder name (ClueHouse, or custom save folder)")
+  w = None
+  while w == None:
+    try:
+      w = World(gameName)
+    except:
+      print(gameName + " not found.")
+      gameName = input("Please enter game folder name (ClueHouse, or custom save folder)")
+  print(gameName + " game loaded!")
+  return w
 
 
 if __name__ == "__main__":
