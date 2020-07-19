@@ -1,0 +1,16 @@
+{"name":"lounge",
+"description":"You have entered a very cozy lounge. Bearskin rug, fireplace smells, and lots of leather armchairs.",
+"neighbors": {
+  "f":"None",
+  "b":"None",
+  "r":"entrance",
+  "l":"None"
+},
+"itemlist": [
+  {
+    "itemName":"fire poker",
+    "movable":"True",
+    "description":"Very handy. You know... for poking things... like fire..."
+  }
+]
+}

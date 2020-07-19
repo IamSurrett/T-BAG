@@ -1,0 +1,15 @@
+{
+  "name":"",
+  "description":"You have entered ...",
+  "neighbors": {"f":"None",
+                "b":"None",
+                "r":"None",
+                "l":"None"},
+  "itemlist": [
+    {
+      "itemName":"",
+      "movable":"True",
+      "description":""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "location":"entrance",
+  "inventory":[{
+    "itemName":"blueprints",
+    "movable":"True",
+    "description":"TODO: Figure out how to get the map to show up"
+  }],
+  "stats":{
+    "health": 100,
+    "money": 0,
+    "attackDamage": 10,
+    "resistance": 20
+  }
+}

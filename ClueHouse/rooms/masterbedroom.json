@@ -1,0 +1,15 @@
+{
+  "name":"masterbedroom",
+  "description":"You have entered an exquisitely furnished bedroom",
+  "neighbors": {"f":"None",
+                "b":"None",
+                "r":"None",
+                "l":"None"},
+  "itemlist": [
+    {
+      "itemName":"a very sturdy safe",
+      "movable":"False",
+      "description":"Has a keyhole. Too bad you don't have a key..?"
+    }
+  ]
+}

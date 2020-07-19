@@ -26,19 +26,62 @@ class World:
 
     self.lounge = Location('in a room with a warm fireplace',[Item('fire poker',True,'If you touch it, your hands will be covered in soot.')])
 
-    self.diningroom = Location('in the ornrate dining room',[Item('Solid oak dining table',False,'beautifully handcarved with elaborate designs'),Item('plate of food',True,'A plate filled with turkey, mashed popatoes and other Thanksgiving specialties.')])
+    self.diningroom =
+      Location('in the ornrate dining room',
+      [
+        Item(
+          'Solid oak dining table',
+          False,
+          'beautifully handcarved with elaborate designs'),
+        Item(
+          'plate of food',
+          True,
+          'A plate filled with turkey, mashed popatoes and other Thanksgiving specialties.')
+      ])
 
-    self.kitchen = Location('in a sparkling clean kitchen that smells like heaven',[Item('silver fork',True,'makes eating a plate of food a little easier'),Item('a cute puppy',True,'The puppy is sniffing the air and looking for food')])
+    self.kitchen =
+      Location('in a sparkling clean kitchen that smells like heaven',
+        [Item(
+          'silver fork',
+          True,
+          'makes eating a plate of food a little easier'),
+        Item(
+          'a cute puppy',
+          True,
+          'The puppy is sniffing the air and looking for food')])
 
-    self.ballroom = Location('in an elegant ballroom',[Item('large pipes',False,'They seem to be connected to the study...')])
+    self.ballroom =
+      Location('in an elegant ballroom',
+        [Item(
+          'large pipes',
+          False,
+          'They seem to be connected to the study...')])
 
-    self.mbedroom = Location('in an exquisitely furnished bedroom',[Item('a very sturdy safe',False,'has a keyhole with a familiar pattern')])
+    self.mbedroom =
+      Location('in an exquisitely furnished bedroom',
+        [Item(
+          'a very sturdy safe',
+          False,
+          'has a keyhole with a familiar pattern')])
 
-    self.library = Location('in a cozy room full of books',[Item('a well-worn book',True,'Looks like a great story. Too bad the last page is missing.')])
+    self.library =
+      Location('in a cozy room full of books',
+        [Item(
+          'a well-worn book',
+          True,
+          'Looks like a great story. Too bad the last page is missing.')])
 
-    self.study = Location('in the study room',[Item('large pipe organ',False,'The organ takes up almost the entire room.')])
+    self.study =
+      Location('in the study room',
+        [Item(
+          'large pipe organ',
+          False,
+          'The organ takes up almost the entire room.')])
 
-    self.secretroom = Location('in the secret room', [Item('note', True, 'a chard small piece of paper')])
+    self.secretroom =
+      Location('in the secret room',
+        [Item(
+          'note', True, 'a chard small piece of paper')])
 
     # Set up exits
     self.entrance.west = self.lounge

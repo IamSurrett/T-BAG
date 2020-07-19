@@ -1,0 +1,21 @@
+{
+  "name":"kitchen",
+  "description":"You have entered a sparkling clean kitchen that smells like heaven.",
+  "neighbors": {"f":"None",
+                "b":"diningroom",
+                "r":"None",
+                "l":"None"},
+  "itemlist": [
+    {
+      "itemName":"silver fork",
+      "movable":"True",
+      "description":"FORK! FORK! FORK! FORK! ...my bad. Looks like a tiny pitchfork.",
+      "useableOn":[{"item":"plate of food","result":"eatfood"}]
+    },
+    {
+      "itemName":"cute puppy",
+      "movable":"True",
+      "description":"AWWWWW it's adorable. It has stolen my heart and will steal your food if you let it."
+    }
+  ]
+}
