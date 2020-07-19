@@ -7,7 +7,7 @@ from worldsaver import saveTheWorld
 
 class World:
   def __init__(self, game):
-    self.game = game
+    self.game = "Games/" + game
     self.location = None
     self.locations = self.loadLocations()
     self.player = self.createPlayer()

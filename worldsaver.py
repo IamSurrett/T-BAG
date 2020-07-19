@@ -3,7 +3,7 @@ import json
 from location import Location
 
 def saveTheWorld(world):
-  savename = './' + input("Please enter a save name: ")
+  savename = 'Games/' + input("Please enter a save name: ")
   if savename == world.game:
     return("Cannot save game as original game name. Please choose another name.")
   try:
