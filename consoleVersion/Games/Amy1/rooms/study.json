@@ -1,0 +1,1 @@
+{"name": "study", "description": "You have entered the study", "itemlist": [{"itemName": "large pipe organ", "movable": false, "description": "The organ takes up almost the entire room. The sound it makes probably takes up the entire mansion. Unless it's Tchaikovsky I don't want to hear it."}], "neighbors": {"f": "None", "b": "None", "l": "entrance", "r": "None"}}

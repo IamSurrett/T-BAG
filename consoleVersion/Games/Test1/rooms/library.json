@@ -1,0 +1,1 @@
+{"name": "library", "description": "You have entered a cozy room full of books", "itemlist": [{"itemName": "well-worn book", "movable": true, "description": "Looks like a great story. Too bad the last page is missing. Hey, what were you doing looking for the last page anyway? ...Book spoiler."}], "neighbors": {"f": "masterbedroom", "b": "None", "l": "hall", "r": "None"}}

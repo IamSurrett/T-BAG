@@ -1,0 +1,20 @@
+{
+  "name":"diningroom",
+  "description":"You have entered the ornrate dining room",
+  "neighbors": {"f":"kitchen",
+                "b":"None",
+                "r":"hall",
+                "l":"None"},
+  "itemlist": [
+    {
+      "itemName":"dining table",
+      "movable":"False",
+      "description":"Solid oak. Probably. It could be maple.. I'm not good at distinguishing different types of wood on sight, okay? Also, it's fancy and has ornately carved legs."
+    },
+    {
+      "itemName":"plate of food",
+      "movable":"True",
+      "description":"A plate filled with turkey, mashed popatoes and other Thanksgiving foods. If you don't eat it, I will. Except the cranberry sauce."
+    }
+  ]
+}

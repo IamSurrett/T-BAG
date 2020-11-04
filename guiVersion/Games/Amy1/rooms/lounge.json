@@ -1,0 +1,1 @@
+{"name": "lounge", "description": "You have entered a very cozy lounge. Bearskin rug, fireplace smells, and lots of leather armchairs.", "itemlist": [{"itemName": "fire poker", "movable": true, "description": "Very handy. You know... for poking things... like fire..."}], "neighbors": {"f": "None", "b": "None", "l": "None", "r": "entrance"}}

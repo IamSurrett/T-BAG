@@ -1,0 +1,1 @@
+{"name": "ballroom", "description": "You have entered an elegant ballroom", "itemlist": [{"itemName": "large pipes", "movable": false, "description": "They seem to be connected to the study."}], "neighbors": {"f": "None", "b": "hall", "l": "None", "r": "masterbedroom"}}

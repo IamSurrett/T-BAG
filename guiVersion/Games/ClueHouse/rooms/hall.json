@@ -1,0 +1,15 @@
+{
+  "name":"hall",
+  "description":"You have entered the main hall.",
+  "neighbors": {"f":"ballroom",
+                "b":"entrance",
+                "r":"library",
+                "l":"diningroom"},
+  "itemlist": [
+    {
+      "itemName":"a set of armour",
+      "movable":"False",
+      "description":"Old. Definitely British. You can tell by the extra u."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "location":"entrance",
+  "inventory":[{
+    "itemName":"blueprints",
+    "movable":"True",
+    "description":".______________________________.\n|         |          |         |\n| kitchen | ballroom | bedroom |\n|         |                    |\n|---| |---|---| |----|---------|\n|                    |         |\n| dining  |  hall    | library |\n|         |                    |\n|---------|---| |----|---------|\n|         |                    |\n| lounge  |  start   | study   |\n|                    |         |\n._________|__________|_________.\n"
+  }],
+  "stats":{
+    "health": 100,
+    "money": 0,
+    "attackDamage": 10,
+    "resistance": 20
+  }
+}
